@@ -15,15 +15,15 @@ main {
 	top: 50%;
 	transform: translate(-50%, -50%);
 	border-radius: 30px;
-	padding: 40px;
+	padding: 36px;
 	width: 27%;
 	background: hsl(213, 19%, 18%);
 }
 .star-icon {
-	background: hsl(213, 19%, 18%);
+	background: hsl(213, 20%, 25%);
 	border-radius: 50%;
 	padding: 10px;
-	border: 1px solid grey;
+	border: 1px solid hsl(213, 20%, 25%);
 	padding-bottom: 8px;
 }
 
@@ -44,10 +44,14 @@ p {
 .stars a {
 	color: hsl(217, 12%, 63%);
 	border-radius: 50%;
-	background: hsl(213, 19%, 18%);
-	border: 1px solid green;
+	background: hsl(213, 20%, 25%);
 	padding: 20px;
 	text-decoration: none;
+	opacity: 80%;
+}
+.stars a .clicked{
+	color: hsl(0, 0%, 100%);
+	background: hsl(25, 97%, 53%);
 }
 .stars a:hover {
 	background: hsl(217, 12%, 63%);
@@ -59,12 +63,14 @@ p {
 	cursor: pointer;
 	width: 100%;
 	border-radius: 30px;
-	color: hsl(25, 97%, 53%);
+	border:1px solid hsl(25, 97%, 53%);
 	font-weight: 600;
 	font-family: "Overpass", sans-serif;
-}
-.submit:hover{
 	color: hsl(0, 0%, 100%);
 	background: hsl(25, 97%, 53%);
-
+}
+.submit:hover {
+	color: hsl(25, 97%, 53%);
+	background: hsl(0, 0%, 100%);
+	border:1px solid hsl(0, 0%, 100%);
 }
