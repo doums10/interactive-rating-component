@@ -7,8 +7,7 @@ body {
 	padding: 0px;
 	box-sizing: border-box;
 }
-main {
-}
+
 .container {
 	position: absolute;
 	left: 50%;
@@ -20,7 +19,7 @@ main {
 	background: hsl(213, 19%, 18%);
 }
 .star-icon {
-	background: hsl(213, 20%, 25%);
+	background-color: rgba(71, 95, 128, 0.2);
 	border-radius: 50%;
 	padding: 10px;
 	border: 1px solid hsl(213, 20%, 25%);
@@ -35,27 +34,35 @@ h1 {
 p {
 	color: hsl(217, 12%, 63%);
 }
-.stars {
+.ratings {
 	padding: 24px 0 24px 0;
-	margin: auto;
 	display: flex;
 	justify-content: space-between;
+	list-style: none;
 }
-.stars a {
+
+li {
 	color: hsl(217, 12%, 63%);
 	border-radius: 50%;
-	background: hsl(213, 20%, 25%);
+	background: rgba(71, 95, 128, 0.2);
 	padding: 20px;
 	text-decoration: none;
-	opacity: 80%;
+	width: 55px;
+	height: 55px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-.stars a .clicked{
+.active {
 	color: hsl(0, 0%, 100%);
 	background: hsl(25, 97%, 53%);
 }
-.stars a:hover {
+
+.ratings li:hover {
 	background: hsl(217, 12%, 63%);
 	color: hsl(0, 0%, 100%);
+	transition: all ease 0.4s;
 }
 .submit {
 	padding: 15px 32px;
@@ -63,7 +70,7 @@ p {
 	cursor: pointer;
 	width: 100%;
 	border-radius: 30px;
-	border:1px solid hsl(25, 97%, 53%);
+	border: 1px solid hsl(25, 97%, 53%);
 	font-weight: 600;
 	font-family: "Overpass", sans-serif;
 	color: hsl(0, 0%, 100%);
@@ -72,5 +79,6 @@ p {
 .submit:hover {
 	color: hsl(25, 97%, 53%);
 	background: hsl(0, 0%, 100%);
-	border:1px solid hsl(0, 0%, 100%);
+	border: 1px solid hsl(0, 0%, 100%);
+	transition: all ease 0.8s;
 }
