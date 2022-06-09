@@ -1,13 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 body {
 	font-family: "Overpass", sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
 }
 * {
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
 }
-
+main {
+	width: 90%;
+	min-height: 520px;
+}
 .container {
 	position: absolute;
 	left: 50%;
@@ -15,14 +23,14 @@ body {
 	transform: translate(-50%, -50%);
 	border-radius: 30px;
 	padding: 36px;
-	width: 27%;
 	background: hsl(213, 19%, 18%);
+	width: 90%;
 }
 .star-icon {
 	background-color: rgba(71, 95, 128, 0.2);
 	border-radius: 50%;
 	padding: 10px;
-	border: 1px solid hsl(213, 20%, 25%);
+	border: none;
 	padding-bottom: 8px;
 }
 
@@ -35,7 +43,7 @@ h2 {
 p {
 	color: hsl(217, 12%, 63%);
 }
-.ratings {
+ul {
 	padding: 24px 0 24px 0;
 	display: flex;
 	justify-content: space-between;
@@ -46,7 +54,6 @@ li {
 	color: hsl(217, 12%, 63%);
 	border-radius: 50%;
 	background: rgba(71, 95, 128, 0.2);
-	padding: 20px;
 	text-decoration: none;
 	width: 55px;
 	height: 55px;
@@ -60,52 +67,75 @@ li {
 	background: hsl(25, 97%, 53%);
 }
 
-.ratings li:hover {
+li:hover {
 	background: hsl(217, 12%, 63%);
 	color: hsl(0, 0%, 100%);
 	transition: all ease 0.4s;
 }
 
 .submit {
-	padding: 15px 32px;
+	padding: 14px;
 	font-size: 18px;
 	cursor: pointer;
 	width: 100%;
 	border-radius: 30px;
-	border: 1px solid hsl(25, 97%, 53%);
-	font-weight: 600;
+	border: none;
+	font-weight: 400;
 	font-family: "Overpass", sans-serif;
 	color: hsl(0, 0%, 100%);
 	background: hsl(25, 97%, 53%);
+	text-align: center;
+	text-transform: uppercase;
 }
 .submit:hover {
 	color: hsl(25, 97%, 53%);
 	background: hsl(0, 0%, 100%);
-	border: 1px solid hsl(0, 11%, 52%);
+	border: none;
 	transition: all ease 0.8s;
 }
 /* Hidden div */
 
 .hidden {
-	text-align: center;
 	height: 405px;
 	display: none;
 }
-.hidden img {
+#hidden-div {
+	text-align: center;
+	transition: ease 3s;
+}
+#hidden-div img {
 	display: block;
 	text-align: center;
 	margin: auto;
 	margin-bottom: 26px;
 }
 
-.ratings-choice {
+#hidden-div .ratings-choice {
 	background: rgba(71, 95, 128, 0.2);
 	color: hsl(25, 97%, 53%);
 	padding: 10px 26px;
 	margin: 10px;
 	display: inline-block;
-	border-radius:30px;
+	border-radius: 30px;
 }
-.support{
-	padding:10px;
+.support {
+	padding: 10px;
+}
+
+.attribution {
+	text-align: center;
+}
+
+.attribution p {
+	margin: 0;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 500px) {
+	.container {
+		max-width: 454px;
+	}
 }
