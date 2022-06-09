@@ -1,4 +1,5 @@
 const ratingsElement = document.querySelectorAll(".rate-element");
+const submitButton = document.querySelector(".submit");
 
 let rateNumber;
 
@@ -16,3 +17,11 @@ function resetActive() {
     ratingsElement[i].classList.remove("active");
   }
 }
+
+
+
+/* sélectionner le boutton submit
+quand on click sur le bouton submit => afficher la nouvelle div hidden
+
+sélectionner le span id => si la note est supérieur à 0 remplacer le span sélectionné*/
+

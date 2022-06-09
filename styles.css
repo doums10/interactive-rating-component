@@ -26,7 +26,8 @@ body {
 	padding-bottom: 8px;
 }
 
-h1 {
+h1,
+h2 {
 	padding: 25px 0 10px 0;
 	color: hsl(0, 0%, 100%);
 }
@@ -64,6 +65,7 @@ li {
 	color: hsl(0, 0%, 100%);
 	transition: all ease 0.4s;
 }
+
 .submit {
 	padding: 15px 32px;
 	font-size: 18px;
@@ -79,6 +81,31 @@ li {
 .submit:hover {
 	color: hsl(25, 97%, 53%);
 	background: hsl(0, 0%, 100%);
-	border: 1px solid hsl(0, 0%, 100%);
+	border: 1px solid hsl(0, 11%, 52%);
 	transition: all ease 0.8s;
+}
+/* Hidden div */
+
+.hidden {
+	text-align: center;
+	height: 405px;
+	display: none;
+}
+.hidden img {
+	display: block;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 26px;
+}
+
+.ratings-choice {
+	background: rgba(71, 95, 128, 0.2);
+	color: hsl(25, 97%, 53%);
+	padding: 10px 26px;
+	margin: 10px;
+	display: inline-block;
+	border-radius:30px;
+}
+.support{
+	padding:10px;
 }
